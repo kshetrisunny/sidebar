@@ -1,0 +1,93 @@
+<div id="wrapper"  [ngClass]="ref.click === true? 'toggled' :''" >
+  <div class="overlay" [ngStyle]="{disply:ref.click === true? 'block' :'none'}" ></div>
+
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top c-menu js-menu" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav u-list">
+          <li class="sidebar-brand">
+              <a href="#">
+                  DnD
+              </a>
+          </li>
+          
+          <li class=" c-menu__item is-active">
+              <div class="c-menu__item__inner"><i class="fa fa-fw fa-dashboard fa-3x"></i>
+                <div><span>Dashboard</span></div>
+              </div>
+          </li>
+        
+          <li class=" c-menu__item is-active">
+              <a [routerLink]="[ '/submenu' ]"></a>
+              <div class="c-menu__item__inner"><i class="fa fa-fw fa-home fa-2x" ></i>
+                <div><span>Home</span></div>
+              </div>
+          </li>
+                   
+          <li class=" c-menu__item is-active">
+              <a href="#"></a>
+              <div class="c-menu__item__inner"><i class="fa fa-fw fa-user fa-2x"></i>
+                <div><span>Team</span></div>
+              </div>
+          </li>
+
+          <li class=" c-menu__item is-active" >
+            
+            <div class="c-menu__item__inner" ><i class="fa fa-fw fa-wrench fa-2x"></i>
+                <div><span>Works</span></div>
+                <div class=" dropright mt-1 pt-1">
+                        <a href="#" class="dropdown-toggle float-right" data-toggle="collapse" >
+                        </a>
+                                <div class="collapse">
+                                        <h6 class="nav-item">Web Elements</h6>
+                                             <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                                             <li class="nav-item"><a class="nav-link" href="#">JS</a></li>
+                                </div>
+                  </div>
+              </div>
+              
+          </li>
+
+          <li class=" c-menu__item is-active"> 
+              <a href="#"></a>
+              <div class="c-menu__item__inner"><i class="fa fa-fw fa-cog fa-2x"></i>
+                <div><span>Services</span></div>
+              </div>
+          </li>
+          <li class=" c-menu__item is-active">
+              <a href="#"></a>
+              <div class="c-menu__item__inner"><i class="fa fa-fw fa-envelope fa-2x"></i>
+                <div><span>Contact</span></div>
+              </div>
+          </li>
+          <li class=" c-menu__item is-active">
+              <a href="#"></a>
+              <div class="c-menu__item__inner"><i class="fa fa-fw fa-user fa-2x"></i>
+                <div><span>Follow me</span></div>
+              </div>
+          </li>
+      </ul>
+  </nav>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+      <button appNavbar  #ref="appNavbar" type="button" class="hamburger is-closed nav-link nav-menu-main menu-toggle hidden-xs" data-toggle="offcanvas">
+          <span class="hamb-top"></span>
+    <span class="hamb-middle"></span>
+  <span class="hamb-bottom"></span>
+      </button>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <h1> Toggle Sidebar Navigation</h1>
+              </div>
+          </div>
+      </div>
+
+  <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!-- <router-outlet></router-outlet> -->

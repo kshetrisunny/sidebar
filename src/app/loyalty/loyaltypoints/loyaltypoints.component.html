@@ -1,0 +1,185 @@
+<div class="row">
+  <div class="col-sm-12 col-lg-2"></div>
+  <div class="col-sm-12 col-lg-8">
+    <div class="m-grid">
+      <div class="m-grid-row">
+        <div class="m-grid-col m-grid-col-middle m-grid-col-left m-grid-col-xs-8">
+          <h1 class="page-title"><small>Loyalty points</small></h1>
+        </div>
+        <div class="m-grid-col m-grid-col-middle m-grid-col-right m-grid-col-xs-4">
+          <a href="#"><i class="fa fa-mortar-board"></i>Learn</a>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-lg-2"></div>
+</div>
+
+<!-- <div class="card">
+  <div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-2"></div>
+  <div class="col-sm-12 col-md-8 col-lg-5">
+    <div class="portlet">
+      <div class="portlet title">
+        <div class="caption font-green-meadow">
+          <span class="caption-subject bold uppercase">
+            Points on signup for loyalty program 
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+</div>-->
+
+
+  
+<div class="row justify-content-center">
+  <div class="col-md-8">
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+          <!-- <div class="card-header">POINTS ON SIGN UP FOR LOYALTY PROGRAM</div> -->
+          <div class="portlet">
+              <div class="portlet title">
+                <div class="caption font-green-meadow">
+                  <span class="caption-subject bold uppercase">
+                    Points on signup for loyalty program 
+                  </span>
+                </div>
+              </div>
+            </div>
+          <div class="portlet-body">
+    <div class="row">
+      <div class="col-xs-2 col-sm-3"></div>
+      <div class="col-xs-8 col-sm-1">
+            <div class="input-group bootstrap-touchspin">
+                <span class="input-group-btn ng-scope">
+                  <button class="btn btn-default" (click)="dec()"> - </button>
+                </span>
+                <span class="input-group-addon">Points</span>
+                <input type="text" readonly class="form-control" value="{{counter}}" text-center style="width:auto;">
+                <!-- <h3>{{counter}}</h3> -->
+                <span class="input-group-btn ng-scope" > 
+                  <button class="btn btn-default" (click)="inc()"> + </button> 
+                </span>
+              </div>
+            </div>
+      <div class="col-xs-2 col-sm-3"></div>
+    </div>
+  </div>
+          <!-- <div class="col-sm-9">
+              <div class="row justify-content-center">
+                  <a class="btn btn-primary text-white" (click)="decrement()" role="button">
+                      <i class="fa fa-minus" style="font-size:15px"></i>
+                  </a>
+                  
+                  <div class="row">
+                      <p>Points</p>
+                  </div>
+
+                  <div class="col-sm-2">
+                      <input type="text" readonly class="form-control col-8 text-center bg-white font-weight-bold " id="counterval" value="{{counter}}"
+                       #Totalcartval>
+                        
+                      </div>
+                      <a class="btn btn-primary text-white" (click)="increment()" role="button">
+                          <i class="fa fa-plus" style="font-size:15px"></i>
+                      </a>
+                  
+              </div>
+          </div> -->
+        </div>
+  </div>
+
+</div>
+
+<div class="row justify-content-center" style="padding-top: 30px;">
+<div class="col-md-8">  
+<div class="card shadow p-3 mb-5 bg-white rounded">
+    <div class="portlet">
+        <div class="portlet title">
+          <div class="caption font-green-meadow">
+            <span class="caption-subject bold uppercase">
+              Bonus loyalty 
+            </span>
+          </div>
+        </div>
+      </div>
+    <div class="card">
+      <p style="padding:5px 10px; font-size:12px;">Allow customers to earn Loyalty Rs when purchasing products. You can set Loyalty Rs earned on individual products from the Edit Product page or from a price book. You can turn off Loyalty for individual customers on the Edit Customer page.</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6" style="padding: 30px 50px;">
+          <div class="card">
+            <h5 style="text-align:center; padding-top: 20px;">Earning Loyalty</h5>
+            <div class="col-md-12" style="text-align:center; padding-top: 30px; padding-bottom: 30px;">
+              <input type="text" placeholder="50.00"><b> INR </b> &emsp; <b> = </b> &emsp; <b>Rs.1.00 Loyalty</b>
+            </div>
+          </div>
+          <p style="padding-top: 10px; text-align: center; font-size: 13px; ">Spend Rs.50.00 earns Rs.1.00 Loyalty</p>
+        </div>
+      </div>
+
+      <hr style="border-top: 3px solid rgba(0,0,0,.1); padding: 15px 30px; width: 60%; align-self: center;">
+
+      <div class="row">
+        <div class="col-md-2">
+          <p><b>Bonus loyalty</b></p>
+        </div>
+        <div><input type="checkbox" data-md-icheck (change)="toggle($event)"></div>
+        <div class="col-md-9">
+          <p>Offer bonus Loyalty $ if a customer fills out all of their details in the Customer Portal (see example)</p>
+          <div class="row">
+            <input type="text" style="width:20%; height: 10%; background-color:lightgrey;" [disabled]="!marked"> <p>Loyalty</p>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+</div> 
+</div>
+
+<div class="row justify-content-center" >
+  <div class="col-md-8">  
+  <div class="card shadow p-3 mb-5 bg-white rounded">
+      <div class="portlet">
+          <div class="portlet title">
+            <div class="caption font-green-meadow">
+              <span class="caption-subject bold uppercase">
+                Mail setup 
+              </span>
+            </div>
+          </div>
+        </div>
+      <div class="card" style="padding:0;">
+        <p style="padding:5px 10px; font-size:12px;">Selecting this option will send customers an email welcoming them to the Loyalty program. The welcome email will be sent the next time the customer is added to a sale and includes a link where they can edit their details. Please note, the email will not be sent to customers if they haven't provided an email address, or if the customer has Loyalty disabled.</p>
+      </div>
+    <div class="row" style="padding-top:30px;">  
+      <div class="col-md-2">
+        <p><b>Email subject</b></p>
+      </div>
+      <div class="col-md-6">
+        <input type="text" style="width:90%;">
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <p><b>Email message</b></p>
+          </div>
+          <div class="col-md-9">
+            <textarea name="" id="" cols="30" rows="10" style="width:90%;"></textarea>
+          </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Send</a>
+    </div>
+    
+      </div>
+    </div>
+  </div>
+

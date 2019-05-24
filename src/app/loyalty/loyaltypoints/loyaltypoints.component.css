@@ -1,0 +1,139 @@
+
+.row .col-md-6 .card .col-md-12 input {
+    width: 20%;
+    text-align: center;
+}
+
+.row .col-md-8 .card .card {
+    padding: 0;
+    background-color: #e0ebeb;
+} 
+
+.row .col-md-8 .card {
+    padding: 0;
+    
+}
+
+.card {
+    padding: 20px 30px;
+}
+
+.portlet-body {
+    padding-top: 20px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.page-title {
+    font-weight: 600;
+    padding: 0;
+    letter-spacing: -1px;
+    line-height: 26px;
+    display: block;
+    margin: 0 0 20px;
+}
+
+.m-grid .m-grid-col.m-grid-col-left {
+    text-align: left;
+}
+
+.m-grid .m-grid-col.m-grid-col-right {
+    text-align: right;
+}
+
+.portlet.light {
+    padding: 12px 20px 15px;
+    background-color: #fff;
+}
+
+.portlet.light>.portlet-title>.caption {
+    color: #666;
+    padding: 10px 0;
+}
+
+.portlet>.portlet-title>.caption {
+    float: left;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 0;
+}
+
+.font-green-meadow {
+    color: #2bbdb9!important;
+}
+
+.portlet.light>.portlet-title {
+    padding: 0;
+    min-height: 48px;
+}     
+.portlet.light>.portlet-title {
+    padding: 0;
+    min-height: 48px;
+}
+
+.portlet.light>.portlet-title>.caption>.caption-subject {
+    font-size: 16px;
+}
+.uppercase {
+    text-transform: uppercase!important;
+}
+.bold {
+    font-weight: 700!important;
+}
+
+.input-group {
+    display: table;
+    border-collapse: separate;
+}
+.input-group, .input-group-btn, .input-group-btn>.btn {
+    position: relative;
+}
+
+.input-group-addon {
+    background: #ececec;
+    border-color: #ececec;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.input-group-btn {
+    font-size: 0;
+    white-space: nowrap;
+}
+.input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group .form-control, .input-group-addon, .input-group-btn {
+    display: table-cell;
+    /* height: 100%; */
+    /* width: 100%; */
+}
+.input-group, .input-group-btn, .input-group-btn>.btn {
+    position: relative;
+}
+
+
+.btn {
+    outline: 0!important;
+}
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
